@@ -1,0 +1,7 @@
+CSS variable
+CSS grid and flexbox
+CSS units for responsive design (vh, vw, fr, %)
+From submission with spam protaction 
+CSS transition and animation
+SwiperJS for slides
+CSS media queries
