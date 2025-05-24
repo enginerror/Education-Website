@@ -3,30 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education Website</title>
+    <title>platform</title>
+    <!-- LINK CSS -->
     <link rel="stylesheet" href="./CSS/style.css">
+    <!-- WEB ICON -->
+    <!-- <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/3845/3845897.png"> -->
     <!-- ICONSCOUT CDN -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <!-- FONT (MONTSERRAT) -->
+    <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Dela+Gothic+One&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Outfit:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
     <!-- SWIPER JS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
 </head>
 <body>
+    <!-- ==========  GREADIENT EFFECT  ========== -->
+
+    <div class="absolute">
+        <div class="absolute inset-0 justify-center">
+            <div class="bg-shape1 bg-teal opacity-50 bg-blur"></div>
+            <div class="bg-shape2 bg-primary opacity-50 bg-blur"></div>
+            <div class="bg-shape1 bg-purple opacity-50 bg-blur"></div>
+        </div>
+    </div>
 
     <!-- ==========  NAVBAR  ========== -->
 
     <nav>
         <div class="container nav_container">
-            <a href="index.html"><h4>EDUSITE</h4></a>
+            <div class="web__logo">
+                <img src="https://cdn-icons-png.flaticon.com/128/3845/3845897.png" alt="website logo">
+                <a href="index.html"><h4>EduZone</h4></a>
+            </div>
             <ul class="nav_menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
                 <li><a href="courses.html">Courses</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Log in</a></li>
+                <li class="contact"><a href="contact.html">Get Started</a></li>
             </ul>
 
             <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
@@ -39,15 +54,37 @@
     <header>
         <div class="container header_container">
             <div class="header_left">
-                <h1>Grow your skill to advance your carear path</h1>
+                <h2 class="glow"><span>Grow</span> your skills and advance <span>your carear</span> path</h2>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, libero tempore expedita animi unde eaque menu aja kl ke badne lorem
+                    The best online course platform for creating, selling and promoting your online course. Start monetizing your skills, experiences and your audience.
                 </p>
-                <a href="courses.html" class="btn btn-primary">Get Strated</a>
+                <a href="courses.html" class="btn btn-primary">Sign Up For Free</a>
             </div>
             <div class="header_right">
-                <div class="header_right-image">
-                    <img src="./public/header.svg" alt="">
+                <div class="header_right_container">
+                    <div class="right_left_container">
+                        <img src="./public/model.webp">
+                    </div>
+                    <div class="right_right_container">
+                        <div class="right-upper-container">
+                            <div class="upper-icon">
+                                <span class="main-section-icon">
+                                    <i class="uil uil-video"></i>
+                                </span>
+                                <p>Online</p>
+                            </div>
+                            <div class="lower-text">Font-End development webinar</div>
+                        </div>
+                        <div class="right-lower-container">
+                            <div class="upper-icon">
+                                <span class="main-section-icon">
+                                    <i class="uil uil-video"></i>
+                                </span>
+                                <p>Online</p>
+                            </div>
+                            <div class="lower-text">Step into the future with Data Analytics</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -60,7 +97,7 @@
             <div class="categories_left">
                 <h1>Categories</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quae ipsa doloribus soluta cumque, maxime reprehenderit et qui quasi hic amet consectetur adipisicing elit.
+                    Discover a wide range of skill-based courses tailored to help you grow in various fields. Whether you're looking to start a new career or upskill in your current one, our categorized learning paths make it easy to find what suits you best.
                 </p>
                 <a href="#" class="btn">Learn More</a>
             </div>
@@ -69,37 +106,37 @@
                 <article class="category">
                     <span class="category_icon"><i class="uil uil-bitcoin-circle"></i></span>
                     <h5>Blockchain</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, enim.</p>
+                    <p>Learn the fundamentals of blockchain technology.</p>
                 </article>
 
                 <article class="category">
                     <span class="category_icon"><i class="uil uil-palette"></i></span>
                     <h5>Graphic Design</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, enim.</p>
+                    <p>Master design principles, tools like Photoshop and Illustrator.</p>
                 </article>
 
                 <article class="category">
                     <span class="category_icon"><i class="uil uil-usd-circle"></i></span>
                     <h5>Finance</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, enim.</p>
+                    <p>Understand budgeting, investing, financial analysis.</p>
                 </article>
 
                 <article class="category">
                     <span class="category_icon"><i class="uil uil-megaphone"></i></span>
                     <h5>Marketing</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, enim.</p>
+                    <p>Explore digital marketing, SEO, content strategy, branding.</p>
                 </article>
 
                 <article class="category">
                     <span class="category_icon"><i class="uil uil-music"></i></span>
                     <h5>Music</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, enim.</p>
+                    <p>Discover music theory, composition, audio production.</p>
                 </article>
 
                 <article class="category">
                     <span class="category_icon"><i class="uil uil-puzzle-piece"></i></span>
                     <h5>Business</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, enim.</p>
+                    <p>Learn business strategy, management, entrepreneurship.</p>
                 </article>
             </div>
         </div>
@@ -109,46 +146,9 @@
 
 
     <section class="courses">
-        <h2>Our Popular Courses</h2>
+        <p>Our Popular Courses</p>
         <div class="container courses_container">
-            <article class="course">
-                <div class="course_image">
-                    <img src="./public/course1.jpg" alt="">
-                </div>
-                <div class="course_info">
-                    <h4>Responsive Social Media Website UI Design</h4>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, nesciunt tenetur excepturi illum eaque suscipit.
-                </p>
-                <a href="courses.html" class="btn btn-primary">Learn More</a>
-                </div>
-            </article>
-
-            <article class="course">
-                <div class="course_image">
-                    <img src="./public/course2.jpg" alt="">
-                </div>
-                <div class="course_info">
-                    <h4>Responsive Smart Home Website Design</h4>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, nesciunt tenetur excepturi illum eaque suscipit.
-                </p>
-                <a href="courses.html" class="btn btn-primary">Learn More</a>
-                </div>
-            </article>
-
-            <article class="course">
-                <div class="course_image">
-                    <img src="./public/course3.jpg" alt="">
-                </div>
-                <div class="course_info">
-                    <h4>Responsive Admin Dashboard UI Design</h4>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, nesciunt tenetur excepturi illum eaque suscipit.
-                </p>
-                <a href="courses.html" class="btn btn-primary">Learn More</a>
-                </div>
-            </article>
+            
         </div>
     </section>
 
@@ -158,12 +158,13 @@
     <section class="faqs">
         <h2>Frequently Asked Question</h2>
         <div class="container faqs_container">
+
             <article class="faq">
                 <div class="faq_icon"><i class="uil uil-plus"></i></div>
                 <div class="question_answer">
-                    <h4>How do I know the right course for me?</h4>
+                    <h4>What types of courses do you offer?</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque molestiae dolorem assumenda iste aut veritatis eligendi soluta ducimus delectus quia Lorem ipsum dolor sit.
+                        We offer a wide range of skill-based courses including technology, business, design, finance, and more.
                     </p>
                 </div>
             </article>
@@ -171,9 +172,9 @@
             <article class="faq">
                 <div class="faq_icon"><i class="uil uil-plus"></i></div>
                 <div class="question_answer">
-                    <h4>How do I know the right course for me?</h4>
+                    <h4>Are the courses free or paid?</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque molestiae dolorem assumenda iste aut veritatis eligendi soluta ducimus delectus quia Lorem ipsum dolor sit.
+                        We offer both free and premium courses. You can start with free content and upgrade anytime.
                     </p>
                 </div>
             </article>
@@ -181,9 +182,9 @@
             <article class="faq">
                 <div class="faq_icon"><i class="uil uil-plus"></i></div>
                 <div class="question_answer">
-                    <h4>How do I know the right course for me?</h4>
+                    <h4>Do I get a certificate after completing a course?</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque molestiae dolorem assumenda iste aut veritatis eligendi soluta ducimus delectus quia Lorem ipsum dolor sit.
+                        Yes, upon successful completion of a course, you'll receive a shareable certificate.
                     </p>
                 </div>
             </article>
@@ -191,9 +192,9 @@
             <article class="faq">
                 <div class="faq_icon"><i class="uil uil-plus"></i></div>
                 <div class="question_answer">
-                    <h4>How do I know the right course for me?</h4>
+                    <h4>Can I access the courses on mobile?</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque molestiae dolorem assumenda iste aut veritatis eligendi soluta ducimus delectus quia Lorem ipsum dolor sit.
+                        Yes, our platform is fully responsive and works on all devices including smartphones and tablets.
                     </p>
                 </div>
             </article>
@@ -201,9 +202,9 @@
             <article class="faq">
                 <div class="faq_icon"><i class="uil uil-plus"></i></div>
                 <div class="question_answer">
-                    <h4>How do I know the right course for me?</h4>
+                    <h4>Are there any live classes or only recorded videos?</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque molestiae dolorem assumenda iste aut veritatis eligendi soluta ducimus delectus quia Lorem ipsum dolor sit.
+                        We provide recorded video lessons. Some premium courses may include live sessions.
                     </p>
                 </div>
             </article>
@@ -211,49 +212,9 @@
             <article class="faq">
                 <div class="faq_icon"><i class="uil uil-plus"></i></div>
                 <div class="question_answer">
-                    <h4>How do I know the right course for me?</h4>
+                    <h4>How can I track my learning progress?</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque molestiae dolorem assumenda iste aut veritatis eligendi soluta ducimus delectus quia Lorem ipsum dolor sit.
-                    </p>
-                </div>
-            </article>
-
-            <article class="faq">
-                <div class="faq_icon"><i class="uil uil-plus"></i></div>
-                <div class="question_answer">
-                    <h4>How do I know the right course for me?</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque molestiae dolorem assumenda iste aut veritatis eligendi soluta ducimus delectus quia Lorem ipsum dolor sit.
-                    </p>
-                </div>
-            </article>
-
-            <article class="faq">
-                <div class="faq_icon"><i class="uil uil-plus"></i></div>
-                <div class="question_answer">
-                    <h4>How do I know the right course for me?</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque molestiae dolorem assumenda iste aut veritatis eligendi soluta ducimus delectus quia Lorem ipsum dolor sit.
-                    </p>
-                </div>
-            </article>
-
-            <article class="faq">
-                <div class="faq_icon"><i class="uil uil-plus"></i></div>
-                <div class="question_answer">
-                    <h4>How do I know the right course for me?</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque molestiae dolorem assumenda iste aut veritatis eligendi soluta ducimus delectus quia Lorem ipsum dolor sit.
-                    </p>
-                </div>
-            </article>
-
-            <article class="faq">
-                <div class="faq_icon"><i class="uil uil-plus"></i></div>
-                <div class="question_answer">
-                    <h4>How do I know the right course for me?</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque molestiae dolorem assumenda iste aut veritatis eligendi soluta ducimus delectus quia Lorem ipsum dolor sit.
+                        You can track your progress through your dashboard, which shows completed lessons and course status.
                     </p>
                 </div>
             </article>
@@ -265,12 +226,12 @@
     <!-- ==========  TESTIMONIALS  ========== -->
 
     <section class="container testimonials__container mySwiper">
-        <h2>Students' Testimonials</h2>
+        <h1>Student's <span>Testimonials</span></h1>
 
         <div class="swiper-wrapper">
             <artical class="testimonial swiper-slide">
                 <div class="avatar">
-                    <img src="./public/avatar1.jpg">
+                    <img src="./public/stu1.jpg">
                 </div>
                 <div class="testimonial__info">
                     <h5>Diana Ayi</h5>
@@ -283,7 +244,7 @@
 
             <artical class="testimonial swiper-slide">
                 <div class="avatar">
-                    <img src="./public/avatar2.jpg">
+                    <img src="./public/stu2.jpg">
                 </div>
                 <div class="testimonial__info">
                     <h5>Diana Ayi</h5>
@@ -296,7 +257,7 @@
 
             <artical class="testimonial swiper-slide">
                 <div class="avatar">
-                    <img src="./public/avatar3.jpg">
+                    <img src="./public/stu3.jpg">
                 </div>
                 <div class="testimonial__info">
                     <h5>Diana Ayi</h5>
@@ -441,7 +402,7 @@
             // when window width is >= 600px
             breakpoints: {
                 600: {
-                    slidesPerView: 2
+                    slidesPerView: 3
                 }
             }
         });
