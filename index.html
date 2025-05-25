@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
 </head>
+
+
 <body>
     <!-- ==========  GREADIENT EFFECT  ========== -->
 
@@ -31,7 +33,7 @@
 
     <!-- ==========  NAVBAR  ========== -->
 
-    <nav>
+    <nav class="hidden">
         <div class="container nav_container">
             <div class="web__logo">
                 <img src="https://cdn-icons-png.flaticon.com/128/3845/3845897.png" alt="website logo">
@@ -51,7 +53,7 @@
 
     <!-- ==========  HEADER  ========== -->
 
-    <header>
+    <header class="hidden" id="home">
         <div class="container header_container">
             <div class="header_left">
                 <h2 class="glow"><span>Grow</span> your skills and advance <span>your carear</span> path</h2>
@@ -92,7 +94,7 @@
 
     <!-- ==========  CATEGORIES SECTION  ========== -->
 
-    <section class="categories">
+    <section class="categories hidden">
         <div class="container categories_container">
             <div class="categories_left">
                 <h1>Categories</h1>
@@ -145,17 +147,31 @@
     <!-- ==========  COURSES SECTION  ========== -->
 
 
-    <section class="courses">
+    <section class="courses hidden">
         <p>Our Popular Courses</p>
         <div class="container courses_container">
-            
+            <article class="course">
+                <div class="course__image">
+                    <img src="./public/course3.avif" alt="">
+                </div>
+            </article>
+            <article class="course">
+                <div class="course__image">
+                    <img src="./public/course2.avif" alt="">
+                </div>
+            </article>
+            <article class="course">
+                <div class="course__image">
+                    <img src="./public/course1.avif" alt="">
+                </div>
+            </article>
         </div>
     </section>
 
 
     <!-- ==========  FAQS  ========== -->
 
-    <section class="faqs">
+    <section class="faqs hidden">
         <h2>Frequently Asked Question</h2>
         <div class="container faqs_container">
 
@@ -225,33 +241,22 @@
 
     <!-- ==========  TESTIMONIALS  ========== -->
 
-    <section class="container testimonials__container mySwiper">
+    <section class="container testimonials__container hidden">
         <h1>Student's <span>Testimonials</span></h1>
 
-        <div class="swiper-wrapper">
-            <artical class="testimonial swiper-slide">
-                <div class="avatar">
-                    <img src="./public/stu1.jpg">
-                </div>
-                <div class="testimonial__info">
-                    <h5>Diana Ayi</h5>
-                    <small>Student</small>
-                </div>
-                <div class="testimonial__body">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, reprehenderit quos quo nulla quis explicabo debitis fugit.</p>
-                </div>
-            </artical>
+        <div class="swipperContainer mySwiper">
+            <div class="swiper-wrapper">
 
             <artical class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="./public/stu2.jpg">
                 </div>
                 <div class="testimonial__info">
-                    <h5>Diana Ayi</h5>
+                    <h5>Lucas Bennett</h5>
                     <small>Student</small>
                 </div>
                 <div class="testimonial__body">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, reprehenderit quos quo nulla quis explicabo debitis fugit.</p>
+                    <p>Thanks to this site, I finally feel confident in my skills. I landed an internship just two months after enrolling!</p>
                 </div>
             </artical>
 
@@ -260,87 +265,99 @@
                     <img src="./public/stu3.jpg">
                 </div>
                 <div class="testimonial__info">
-                    <h5>Diana Ayi</h5>
+                    <h5>Mason Wright</h5>
                     <small>Student</small>
                 </div>
                 <div class="testimonial__body">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, reprehenderit quos quo nulla quis explicabo debitis fugit.</p>
+                    <p>Their explanations and real-world examples helped me understand every concept deeply.</p>
                 </div>
             </artical>
 
             <artical class="testimonial swiper-slide">
                 <div class="avatar">
-                    <img src="./public/avatar4.jpg">
+                    <img src="./public/stu4.jpg">
                 </div>
                 <div class="testimonial__info">
-                    <h5>Diana Ayi</h5>
+                    <h5>Oliver Brooks</h5>
                     <small>Student</small>
                 </div>
                 <div class="testimonial__body">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, reprehenderit quos quo nulla quis explicabo debitis fugit.</p>
+                    <p>From the interface to the content quality—everything here is top-notch. Highly recommended for serious learners.</p>
                 </div>
             </artical>
 
             <artical class="testimonial swiper-slide">
                 <div class="avatar">
-                    <img src="./public/avatar5.jpg">
+                    <img src="./public/stu5.jpg">
                 </div>
                 <div class="testimonial__info">
-                    <h5>Diana Ayi</h5>
+                    <h5>Liam Anderson</h5>
                     <small>Student</small>
                 </div>
                 <div class="testimonial__body">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, reprehenderit quos quo nulla quis explicabo debitis fugit.</p>
+                    <p>The course structure is well-designed and keeps you motivated throughout. Perfect for self-paced learners like me.</p>
                 </div>
             </artical>
 
             <artical class="testimonial swiper-slide">
                 <div class="avatar">
-                    <img src="./public/avatar6.jpg">
+                    <img src="./public/stu1.jpg">
                 </div>
                 <div class="testimonial__info">
-                    <h5>Diana Ayi</h5>
+                    <h5>Ayaan Khan</h5>
                     <small>Student</small>
                 </div>
                 <div class="testimonial__body">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, reprehenderit quos quo nulla quis explicabo debitis fugit.</p>
+                    <p>This platform transformed my learning journey. The structured courses and expert mentors helped me master concepts.</p>
                 </div>
             </artical>
 
             <artical class="testimonial swiper-slide">
                 <div class="avatar">
-                    <img src="./public/avatar7.jpg">
+                    <img src="./public/stu6.jpg">
                 </div>
                 <div class="testimonial__info">
-                    <h5>Diana Ayi</h5>
+                    <h5>Jacob Evans</h5>
                     <small>Student</small>
                 </div>
                 <div class="testimonial__body">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, reprehenderit quos quo nulla quis explicabo debitis fugit.</p>
+                    <p>The focus on practical skills. I was able to build real projects and showcase them in my portfolio.</p>
+                </div>
+            </artical>
+
+            <artical class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./public/stu7.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Aiden Cooper</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>This site turned my academic weaknesses into strengths. I never thought I'd enjoy learning this much!</p>
                 </div>
             </artical>
 
         </div>
-
-        <div class="swiper-pagination"></div>
+        </div>
 
     </section>
 
     <!-- ==========  FOOTER  ========== -->
 
     <footer>
-        <div class="container footer__container">
+        <div class="container footer__container hidden">
             <div class="footer__1">
-                <a href="index.html" class="footer__logo"><h4>EGATOR</h4></a>
+                <a href="index.html" class="footer__logo"><h4>EduZone</h4></a>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur.
+                    The best online course platform for creating, selling and promoting your online course.
                 </p>
             </div>
 
             <div class="footer__2">
                 <h4>Permalinks</h4>
                 <ul class="permalinks">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="courses.html">Course</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -359,42 +376,43 @@
             <div class="footer__4">
                 <h4>Contact Us</h4>
                 <div>
-                    <p>+91 9500456789</p>
-                    <p>ayaan@gmail.com</p>
+                    <p>+91 9563807865</p>
+                    <p>eduzone.study@gmail.com</p>
                 </div>
 
                 <ul class="footer__socials">
                     <li>
-                        <a href="#"><i class="uil uil-facebook"></i></a>
+                        <a href="#"><img src="./public/facebook.png"></a>
                     </li>
                     <li>
-                        <a href="#"><i class="uil uil-instagram-alt"></i></a>
+                        <a href="#"><img src="./public/instagram.png"></a>
                     </li>
                     <li>
-                        <a href="#"><i class="uil uil-twitter"></i></a>
+                        <a href="#"><img src="./public/x.png"></a>
                     </li>
                     <li>
-                        <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+                        <a href="#"><img src="./public/linkedin.png"></a>
                     </li>
                 </ul>
             </div>
         </div>
 
         <div class="footer__copyright">
-            <small>Copyright &copy; EGATOR Youtube Tutorial</small>
+            <small>Copyright &copy; Ayaan Murshed Khan</small>
         </div>
 
     </footer>
 
 
 
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
             spaceBetween: 30,
+            speed: 500,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
@@ -404,7 +422,9 @@
                 600: {
                     slidesPerView: 3
                 }
-            }
+            },
+            mousewheel: true,
+            keyboard: true,
         });
     </script>
 
