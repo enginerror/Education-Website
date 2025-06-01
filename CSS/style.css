@@ -53,6 +53,16 @@ body {
     flex-direction: row;
 }
 
+.absolute1 {
+    position: absolute;
+    top: 1260px !important;
+    left: 750px !important;
+    inset: 0;
+    justify-content: center;
+    display: inline-flex;
+    flex-direction: row;
+}
+
 .justify-center {
     justify-content: center;
 }
@@ -106,11 +116,11 @@ body {
 }
 
 .bg-primary {
-    background-color: rgb(48, 22, 247);
+    background-color: rgba(48, 22, 247, 0.802);
 }
 
 .bg-teal {
-    background-color: rgba(216, 79, 154, 0.7);
+    background-color: rgba(216, 79, 154, 0.762);
 }
 
 .bg-purple {
@@ -122,7 +132,7 @@ body {
 /* smooth animation */
 
 .hidden {
-    opacity: 0;;
+    opacity: 0;
     transition: all .5s;
 }
 
@@ -135,6 +145,7 @@ body {
         transition: none;
     }
 }
+
 /* ========================================================================= */
 
 .container {
@@ -333,7 +344,7 @@ header {
         height: 100%;
         width: 100%;
         object-fit: cover;
-        transition: transform 0.8s;
+        transition: 0.8s;
     }
     img:hover {
         transform: scale(1.1);
@@ -474,8 +485,8 @@ header {
 
 .courses_container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 }
 
 .course {
@@ -659,3 +670,68 @@ footer ul li a:hover {
     font-family: "Comfortaa", sans-serif;
 }
 
+
+/* responsive */
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+    h3 {
+        font-size: 1.4rem;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    /* navbar */
+
+    nav button {
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        color: var(--color-white);
+        cursor: pointer;
+    }
+
+    nav button#close-menu-btn {
+        display: none;
+    }
+
+    .nav_menu {
+        position: fixed;
+        top: 5rem;
+        right: 5%;
+        height: fit-content;
+        width: 18rem;
+        flex-direction: column;
+        gap: 0;
+        box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+    }
+
+    .nav_menu li {
+        width: 100%;
+        height: 5.8rem;
+    }
+    .nav_menu li a {
+        background: var(--color-primary);
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+
+    .nav_menu .contact {
+    padding: 0 0;
+    a {
+        color: var(--color-a);
+        font-weight: 400;
+    }
+}
+}
