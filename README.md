@@ -1,2 +1,3 @@
-# Educational-Website
-Dummy Responsive Multipage Education Website using HTML, CSS, JavaScript 
+# Landing-Website
+Responsive Website using HTML, CSS, JavaScript 
+
